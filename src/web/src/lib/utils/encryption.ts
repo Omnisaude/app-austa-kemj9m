@@ -179,9 +179,9 @@ export class WebEncryptionService {
     this.sensitivePatterns = SENSITIVE_PATTERNS;
     
     // Initialize Web Worker for CPU-intensive operations
-    this.worker = new Worker(
+/*     this.worker = new Worker(
       new URL('./encryption.worker.ts', import.meta.url)
-    );
+    ); */
 
     // Initialize encryption key
     this.initializeKey();

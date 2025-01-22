@@ -3,12 +3,12 @@
 import React, { useCallback, useState, Suspense } from 'react';
 import styled from '@emotion/styled';
 import { useRouter } from 'next/navigation';
-import ProductGrid from '../../components/marketplace/ProductGrid';
+import ProductGrid from '@/components/marketplace/ProductGrid';
 import ErrorBoundary from '../common/ErrorBoundary';
 import { useMarketplace } from '../../../hooks/useMarketplace';
 import { useAnalytics } from '../../../hooks/useAnalytics';
 import { Product } from '../../lib/types/product';
-import { Analytics } from '../../lib/utils/analytics';
+import { Analytics } from '@/lib/utils/analytics';
 
 // Styled components with accessibility and responsive design
 const PageContainer = styled.div`

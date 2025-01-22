@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { Container, Typography, CircularProgress, Alert, Snackbar } from '@mui/material';
 import { useRouter } from 'next/navigation';
 
-import VideoConsultation from '../../components/virtual-care/VideoConsultation';
+import VideoConsultation from '@/components/virtual-care/VideoConsultation';
 import { virtualCareApi } from '../../lib/api/virtualCare';
 import { 
   ConsultationStatus, 

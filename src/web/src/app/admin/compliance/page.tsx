@@ -5,10 +5,10 @@ import styled from '@emotion/styled';
 import { format, parseISO } from 'date-fns';
 import useWebSocket from 'react-use-websocket';
 
-import AdminLayout from '../../../components/layout/AdminLayout';
-import Table from '../../../components/common/Table';
-import Modal from '../../../components/common/Modal';
-import ErrorBoundary from '../../../components/common/ErrorBoundary';
+import AdminLayout from '../@/components/layout/AdminLayout';
+import Table from '../@/components/common/Table';
+import Modal from '../@/components/common/Modal';
+import ErrorBoundary from '../@/components/common/ErrorBoundary';
 import { Analytics } from '../../../lib/utils/analytics';
 
 // Constants

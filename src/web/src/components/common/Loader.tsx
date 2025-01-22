@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'; // ^18.2.0
 import styled from '@emotion/styled'; // ^11.11.0
 import { keyframes } from '@emotion/react'; // ^11.11.0

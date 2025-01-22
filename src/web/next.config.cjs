@@ -4,7 +4,9 @@
  * with HIPAA compliance considerations
  */
 
-import { BASE_URL, API_VERSION } from './src/lib/constants/endpoints';
+
+const { BASE_URL, API_VERSION } = require('./src/lib/constants/endpoints');
+
 import withBundleAnalyzer from '@next/bundle-analyzer'; // v13.4.0
 import withPWA from 'next-pwa'; // v5.6.0
 import withSentryConfig from '@sentry/nextjs'; // v7.0.0

@@ -14,7 +14,7 @@ import { IHealthRecordAttachment } from '../../lib/types/healthRecord';
 import { useHealthRecords } from '../../hooks/useHealthRecords';
 import Button from '../common/Button';
 import Loader from '../common/Loader';
-import { Analytics } from '../../lib/utils/analytics';
+import { Analytics } from '@/lib/utils/analytics';
 
 // Configure PDF.js worker
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;

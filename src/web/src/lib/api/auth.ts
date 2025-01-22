@@ -7,7 +7,12 @@
 
 import axios, { AxiosInstance, AxiosRequestConfig } from 'axios'; // v1.4.0
 import CryptoJS from 'crypto-js'; // v4.1.1
-import winston from 'winston'; // v3.8.2
+
+let winston: any;
+
+if (typeof window === "undefined") {
+  winston = require("winston");
+}
 
 import { AuthEndpoints } from '../constants/endpoints';
 import { 
@@ -22,14 +27,14 @@ import {
 import { encryptData, WebEncryptionService } from '../utils/encryption';
 
 // Initialize secure logger for authentication events
-const securityLogger = winston.createLogger({
-  level: 'info',
-  format: winston.format.json(),
-  defaultMeta: { service: 'auth-api' },
-  transports: [
-    new winston.transports.File({ filename: 'security-events.log' })
-  ]
-});
+const securityLogger = winston
+  ? winston.createLogger({
+      level: "info",
+      format: winston.format.json(),
+      transports: [new winston.transports.Console()],
+    })
+  : console;
+
 
 /**
  * Security configuration for authentication API

@@ -7,7 +7,7 @@ import { useErrorBoundary } from 'react-error-boundary'; // v4.0.0
 import { useSecureUpload } from '@austa/secure-upload'; // v1.0.0
 
 // Internal imports
-import ClaimForm from '../../../components/claims/ClaimForm';
+import ClaimForm from '../@/components/claims/ClaimForm';
 import { useClaims } from '../../../hooks/useClaims';
 import { IClaim } from '../../../lib/types/claim';
 import { ErrorCode, ErrorTracker } from '../../../lib/constants/errorCodes';

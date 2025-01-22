@@ -3,9 +3,9 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { useAuditLog } from '@hipaa-tools/audit';
-import Table from '../../../components/common/Table';
-import Button from '../../../components/common/Button';
-import ErrorBoundary from '../../../components/common/ErrorBoundary';
+import Table from '../@/components/common/Table';
+import Button from '../@/components/common/Button';
+import ErrorBoundary from '../@/components/common/ErrorBoundary';
 import { AdminAPI } from '../../../lib/api/admin';
 import { Analytics, AnalyticsCategory, PrivacyLevel } from '../../../lib/utils/analytics';
 import { UserRole, UserStatus } from '../../../lib/types/user';

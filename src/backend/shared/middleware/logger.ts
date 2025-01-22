@@ -1,3 +1,4 @@
+"use client"
 /**
  * @fileoverview Enhanced logging middleware with HIPAA compliance, security features, and performance monitoring
  * @version 1.0.0
@@ -172,13 +173,6 @@ export const requestLogger = (req: Request, res: Response, next: NextFunction): 
 
   // Create request context
   const logger = new Logger({ level: 'info' });
-  const context = logger.createContext({
-    correlationId,
-    requestId: req.id,
-    userId: req.user?.id,
-    sessionId: req.session?.id,
-    source: 'http'
-  });
 
   // Log sanitized request
   logger.log('info', 'Incoming request', {

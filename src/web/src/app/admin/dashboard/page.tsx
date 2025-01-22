@@ -23,8 +23,8 @@ import {
 import { ErrorBoundary } from 'react-error-boundary';
 
 // Internal imports
-import AdminLayout from '../../../components/layout/AdminLayout';
-import HealthMetrics from '../../../components/dashboard/HealthMetrics';
+import AdminLayout from '../@/components/layout/AdminLayout';
+import HealthMetrics from '../@/components/dashboard/HealthMetrics';
 import { useAnalytics } from '../../../hooks/useAnalytics';
 import { UserRole } from '../../../lib/types/user';
 import { SecurityClassification } from '../../../lib/types/healthRecord';
@@ -309,14 +309,14 @@ const AdminDashboardPage = () => {
 
           {/* Health Metrics Component */}
           <Grid item xs={12}>
-            <HealthMetrics
+{/*             <HealthMetrics
               patientId="system"
               refreshInterval={REFRESH_INTERVAL}
               showHistory={true}
               encryptionKey={process.env.NEXT_PUBLIC_ENCRYPTION_KEY || ''}
               accessLevel="admin"
               theme="light"
-            />
+            /> */}
           </Grid>
         </Grid>
       </ErrorBoundary>

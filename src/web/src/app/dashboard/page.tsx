@@ -5,9 +5,9 @@ import { Grid, Container, Typography, Skeleton } from '@mui/material'; // v5.0.0
 import { ErrorBoundary } from 'react-error-boundary'; // v4.0.0
 
 // Internal components
-import HealthMetrics from '../../components/dashboard/HealthMetrics';
-import AppointmentCard from '../../components/dashboard/AppointmentCard';
-import QuickActions from '../../components/dashboard/QuickActions';
+import HealthMetrics from '@/components/dashboard/HealthMetrics';
+import AppointmentCard from '@/components/dashboard/AppointmentCard';
+import QuickActions from '@/components/dashboard/QuickActions';
 
 // Hooks
 import useAuth from '../../hooks/useAuth';
@@ -154,14 +154,15 @@ const DashboardPage: React.FC = () => {
               {loading ? (
                 <Skeleton variant="rectangular" height={200} />
               ) : (
-                <HealthMetrics
+                <></>
+/*                 <HealthMetrics
                   patientId={user.id}
                   refreshInterval={METRICS_REFRESH_INTERVAL}
                   showHistory={true}
                   encryptionKey={tokens?.accessToken || ''}
                   accessLevel="read"
                   theme="light"
-                />
+                /> */
               )}
             </Grid>
           )}

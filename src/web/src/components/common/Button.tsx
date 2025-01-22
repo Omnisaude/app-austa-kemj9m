@@ -1,7 +1,7 @@
 import React from 'react'; // ^18.0.0
 import styled from '@emotion/styled'; // ^11.11.0
 import { theme } from '../../styles/theme';
-import { Analytics } from '../../lib/utils/analytics';
+import { Analytics } from '@/lib/utils/analytics';
 
 // Button size configurations with clinical touch targets
 const BUTTON_SIZES = {

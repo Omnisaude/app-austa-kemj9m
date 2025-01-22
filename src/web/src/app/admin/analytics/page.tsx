@@ -7,7 +7,7 @@ import { Line, Bar } from 'react-chartjs-2'; // ^4.0.0
 import DatePicker from 'react-datepicker'; // ^4.0.0
 import { AdminAPI } from '../../../lib/api/admin';
 import { Analytics } from '../../../lib/utils/analytics';
-import Table from '../../../components/common/Table';
+import Table from '../@/components/common/Table';
 import { theme } from '../../../styles/theme';
 
 // Register ChartJS components

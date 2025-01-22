@@ -25,7 +25,7 @@ import {
 } from '../../lib/types/healthRecord';
 import { useHealthRecords } from '../../hooks/useHealthRecords';
 import ErrorBoundary from '../common/ErrorBoundary';
-import { Analytics } from '../../lib/utils/analytics';
+import { Analytics } from '@/lib/utils/analytics';
 
 // Styled components with Material Design 3.0 patterns
 const TimelineContainer = styled(Box)(({ theme }) => ({

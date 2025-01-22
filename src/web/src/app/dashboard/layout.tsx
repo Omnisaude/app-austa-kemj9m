@@ -10,8 +10,8 @@ import styled from '@emotion/styled'; // v11.11.0
 import { useRouter } from 'next/router'; // v13.0.0
 
 // Internal imports
-import Header from '../../components/layout/Header';
-import Sidebar from '../../components/layout/Sidebar';
+import Header from '@/components/layout/Header';
+import Sidebar from '@/components/layout/Sidebar';
 import { useAuth } from '../../hooks/useAuth';
 
 // Constants

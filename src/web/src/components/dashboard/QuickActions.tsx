@@ -2,7 +2,7 @@ import React from 'react'; // ^18.0.0
 import styled from '@emotion/styled'; // ^11.11.0
 import { Button } from '../common/Button';
 import { UserRole } from '../../lib/types/user';
-import { Analytics } from '../../lib/utils/analytics';
+import { Analytics } from '@/lib/utils/analytics';
 import { theme } from '../../styles/theme';
 
 // Security level enum for action classification

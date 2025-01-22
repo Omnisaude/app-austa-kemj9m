@@ -41,7 +41,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/lib/types/*.d.ts"
-  ],
+, "next.config.ts", "src/lib/constants/endpoints.js"  ],
   "exclude": [
     "node_modules",
     ".next",

@@ -12,7 +12,7 @@ import { Product } from '../../lib/types/product';
 import ProductCard from './ProductCard';
 import SearchFilters from './SearchFilters';
 import ErrorBoundary from '../common/ErrorBoundary';
-import { Analytics } from '../../lib/utils/analytics';
+import { Analytics } from '@/lib/utils/analytics';
 import { theme } from '../../styles/theme';
 
 // Constants for grid layout

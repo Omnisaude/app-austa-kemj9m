@@ -11,8 +11,8 @@ import React, { useState, useEffect, useCallback } from 'react'; // v18.0.0
 import { useRouter } from 'next/navigation'; // v13.0.0
 import styled from '@emotion/styled'; // v11.11.0
 
-import LoginForm from '../../../components/auth/LoginForm';
-import BiometricAuth from '../../../components/auth/BiometricAuth';
+import LoginForm from '../@/components/auth/LoginForm';
+import BiometricAuth from '../@/components/auth/BiometricAuth';
 import useAuth from '../../../hooks/useAuth';
 import { AuthState } from '../../../lib/types/auth';
 

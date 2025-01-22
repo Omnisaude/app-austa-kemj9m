@@ -116,14 +116,14 @@ const HomePage = () => {
             {(userRole === UserRole.PATIENT || userRole === UserRole.PROVIDER) && (
               <Grid item xs={12}>
                 <Suspense fallback={<div>Loading health metrics...</div>}>
-                  <HealthMetrics
+{/*                   <HealthMetrics
                     patientId={user?.id || ''}
                     refreshInterval={REFRESH_INTERVAL}
                     showHistory={true}
                     encryptionKey={user?.securitySettings?.lastLoginAt.toString() || ''}
                     accessLevel="read"
                     theme="light"
-                  />
+                  /> */}
                 </Suspense>
               </Grid>
             )}

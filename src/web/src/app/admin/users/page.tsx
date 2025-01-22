@@ -3,8 +3,8 @@
 import React, { useState, useCallback, useMemo } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { useVirtualizer } from '@tanstack/react-virtual';
-import Table from '../../../components/common/Table';
-import Modal from '../../../components/common/Modal';
+import Table from '../@/components/common/Table';
+import Modal from '../@/components/common/Modal';
 import { AdminAPI } from '../../../lib/api/admin';
 import { UserRole, UserStatus, IUser } from '../../../lib/types/user';
 import { Analytics, AnalyticsCategory, PrivacyLevel } from '../../../lib/utils/analytics';

@@ -11,10 +11,10 @@ import { Suspense } from 'react'; // v18.0.0
 import { audit-log } from '@austa/audit-log'; // v1.0.0
 
 // Internal imports
-import RecordsList from '../../components/health-records/RecordsList';
-import DocumentViewer from '../../components/health-records/DocumentViewer';
-import Timeline from '../../components/health-records/Timeline';
-import ErrorBoundary from '../../components/common/ErrorBoundary';
+import RecordsList from '@/components/health-records/RecordsList';
+import DocumentViewer from '@/components/health-records/DocumentViewer';
+import Timeline from '@/components/health-records/Timeline';
+import ErrorBoundary from '@/components/common/ErrorBoundary';
 import { useHealthRecords } from '../../hooks/useHealthRecords';
 
 // Types and interfaces
@@ -24,7 +24,7 @@ import {
   SecurityClassification,
   ViewerAccessLevel 
 } from '../../lib/types/healthRecord';
-import { Analytics } from '../../lib/utils/analytics';
+import { Analytics } from '@/lib/utils/analytics';
 
 // Constants
 const DEFAULT_VIEW = 'list';

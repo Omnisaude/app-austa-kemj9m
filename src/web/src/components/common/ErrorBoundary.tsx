@@ -1,7 +1,7 @@
 import React from 'react'; // ^18.2.0
 import styled from '@emotion/styled'; // ^11.11.0
 import { Alert, Button, Typography, Box } from '@mui/material'; // ^5.0.0
-import { Analytics } from '../../lib/utils/analytics';
+import { Analytics } from '@/lib/utils/analytics';
 import Loader from './Loader';
 
 // Styled components for error UI

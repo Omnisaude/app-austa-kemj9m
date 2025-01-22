@@ -11,9 +11,9 @@ import {
   SecurityClassification 
 } from '../../../lib/types/healthRecord';
 import { useHealthRecords } from '../../../hooks/useHealthRecords';
-import DocumentViewer from '../../../components/health-records/DocumentViewer';
-import Button from '../../../components/common/Button';
-import Loader from '../../../components/common/Loader';
+import DocumentViewer from '../@/components/health-records/DocumentViewer';
+import Button from '../@/components/common/Button';
+import Loader from '../@/components/common/Loader';
 import { Analytics } from '../../../lib/utils/analytics';
 
 // Page props interface

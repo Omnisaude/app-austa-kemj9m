@@ -15,7 +15,7 @@ import { WebEncryptionService } from '@austa/encryption'; // v1.0.0
 import { SecurityLogger } from '@austa/security-logger'; // v1.0.0
 
 // Internal imports
-import RegisterForm from '../../../components/auth/RegisterForm';
+import RegisterForm from '../@/components/auth/RegisterForm';
 import useAuth from '../../../hooks/useAuth';
 import { IUser, UserRole, UserStatus } from '../../../lib/types/user';
 import { IAuthError, MFAMethod } from '../../../lib/types/auth';

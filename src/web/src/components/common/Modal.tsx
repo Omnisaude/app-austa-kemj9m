@@ -4,7 +4,7 @@ import FocusTrap from 'focus-trap-react'; // ^10.0.0
 import { Portal } from '@mui/base'; // ^5.0.0
 import { theme } from '../../styles/theme';
 import Button from './Button';
-import { Analytics } from '../../lib/utils/analytics';
+import { Analytics } from '@/lib/utils/analytics';
 
 // Clinical action interface
 interface ClinicalAction {

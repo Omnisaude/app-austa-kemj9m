@@ -7,7 +7,7 @@ import styled from '@emotion/styled';
 import { useAuditLogger } from '@austa/audit-logger';
 
 // Internal imports
-import StatusTracker from '../../../components/claims/StatusTracker';
+import StatusTracker from '../@/components/claims/StatusTracker';
 import { getClaimById } from '../../../lib/api/claims';
 import { IClaim, ClaimStatus } from '../../../lib/types/claim';
 import { theme } from '../../../styles/theme';
