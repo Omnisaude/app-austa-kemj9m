@@ -4,7 +4,6 @@ import '@testing-library/cypress/add-commands'; // v10.0.0
 import '@cypress/code-coverage/support'; // v3.12.0
 import 'cypress-axe'; // v1.5.0
 import 'cypress-audit'; // v1.1.0
-import '@cypress/security-headers'; // v2.0.0
 
 // Internal imports
 import './commands';
