@@ -82,7 +82,6 @@
     "yup": "1.2.0"
   },
   "devDependencies": {
-    "@accessibility/react-a11y": "2.0.0",
     "@axe-core/react": "^4.7.0",
     "@cypress/audit": "^1.0.0",
     "@cypress/code-coverage": "^3.10.0",

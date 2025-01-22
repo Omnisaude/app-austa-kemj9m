@@ -6,7 +6,6 @@
 
 import React, { useEffect, useCallback, useMemo } from 'react';
 import styled from '@emotion/styled';
-import { useA11y } from '@accessibility/react-a11y'; // v2.0.0
 import { useAuditLog } from '@hipaa/audit-logger'; // v1.2.0
 
 // Internal imports
@@ -69,11 +68,10 @@ export const ClaimsList: React.FC<ClaimsListProps> = ({
   accessLevel
 }) => {
   // Initialize hooks
-  const { claims, loading, error, getClaims } = useClaims({ 
+  const { claims, loading, error, getClaims } = useClaims({
     pageSize,
     complianceLevel: 'strict'
   });
-  const { a11yProps } = useA11y();
   const auditLog = useAuditLog('ClaimsList');
 
   // Format currency with proper accessibility
@@ -102,7 +100,7 @@ export const ClaimsList: React.FC<ClaimsListProps> = ({
       sortable: true,
       'aria-label': 'Claim number column',
       render: (value: string) => (
-        <span role="cell" {...a11yProps}>
+        <span role="cell" >
           {value}
         </span>
       )
@@ -114,7 +112,7 @@ export const ClaimsList: React.FC<ClaimsListProps> = ({
       sortable: true,
       'aria-label': 'Claim type column',
       render: (value: ClaimType) => (
-        <span role="cell" {...a11yProps}>
+        <span role="cell" >
           {value.replace('_', ' ')}
         </span>
       )
@@ -126,7 +124,7 @@ export const ClaimsList: React.FC<ClaimsListProps> = ({
       sortable: true,
       'aria-label': 'Submission date column',
       render: (value: Date) => (
-        <span role="cell" {...a11yProps}>
+        <span role="cell" >
           {formatDate(value)}
         </span>
       )
@@ -138,7 +136,7 @@ export const ClaimsList: React.FC<ClaimsListProps> = ({
       sortable: true,
       'aria-label': 'Claim amount column',
       render: (value: number) => (
-        <span role="cell" {...a11yProps}>
+        <span role="cell" >
           {formatCurrency(value)}
         </span>
       )
@@ -150,7 +148,7 @@ export const ClaimsList: React.FC<ClaimsListProps> = ({
       sortable: true,
       'aria-label': 'Claim status column',
       render: (value: ClaimStatus) => (
-        <StatusBadge 
+        <StatusBadge
           status={value}
           role="status"
           aria-label={`Claim status: ${value.replace('_', ' ').toLowerCase()}`}
@@ -159,7 +157,7 @@ export const ClaimsList: React.FC<ClaimsListProps> = ({
         </StatusBadge>
       )
     }
-  ], [a11yProps, formatCurrency, formatDate]);
+  ], [formatCurrency, formatDate]);
 
   // Handle secure sorting with audit logging
   const handleSort = useCallback((columnId: string, direction: 'asc' | 'desc') => {
@@ -197,7 +195,7 @@ export const ClaimsList: React.FC<ClaimsListProps> = ({
     <ClaimsContainer
       role="region"
       aria-label="Insurance Claims List"
-      {...a11yProps}
+
     >
       <Table
         data={claims}
