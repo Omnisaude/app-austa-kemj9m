@@ -26,7 +26,6 @@
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@fontsource/inter": "^5.0.0",
-    "@healthcare/audit-logger": "^2.0.0",
     "@hipaa-tools/audit": "^2.0.0",
     "@material/web": "^1.0.0",
     "@microsoft/healthcare-fhir-sdk": "^2.0.0",
