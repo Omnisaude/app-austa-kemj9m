@@ -101,7 +101,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-security": "^1.7.0",
     "prettier": "^2.8.0",
-    "typescript": "5.0.0",
+    "typescript": "5.7.3",
     "vitest": "0.34.0"
   },
   "browserslist": {
