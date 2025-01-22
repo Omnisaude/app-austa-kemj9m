@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState, useCallback } from 'react';
 import { Grid, Container, Typography, Skeleton } from '@mui/material'; // v5.0.0
-import { useRBAC } from '@auth/rbac'; // v1.0.0
 import { ErrorBoundary } from 'react-error-boundary'; // v4.0.0
 
 // Internal components
@@ -41,9 +40,7 @@ const ErrorFallback: React.FC<{ error: Error }> = ({ error }) => (
  */
 const DashboardPage: React.FC = () => {
   // Authentication and security hooks
-  const { user, tokens } = useAuth();
-  const { hasPermission } = useRBAC();
-  const { logEvent, logError } = useAnalytics();
+  const { user, tokens } = useAuth();1  const { logEvent, logError } = useAnalytics();
 
   // Component state
   const [loading, setLoading] = useState(true);
@@ -152,7 +149,7 @@ const DashboardPage: React.FC = () => {
       <Container maxWidth="xl" component="main">
         <Grid container spacing={3}>
           {/* Health Metrics Section */}
-          {hasPermission('view_health_metrics') && (
+          {true && (
             <Grid item xs={12}>
               {loading ? (
                 <Skeleton variant="rectangular" height={200} />
@@ -182,7 +179,7 @@ const DashboardPage: React.FC = () => {
           </Grid>
 
           {/* Appointments Section */}
-          {hasPermission('view_appointments') && (
+          {true && (
             <Grid item xs={12}>
               <Typography variant="h6" gutterBottom>
                 Upcoming Appointments

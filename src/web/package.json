@@ -22,7 +22,6 @@
   "dependencies": {
     "@auth0/auth0-react": "^2.0.0",
     "@auth0/nextjs-auth0": "^3.1.0",
-    "@auth/rbac": "^1.0.0",
     "@datadog/browser-rum": "^4.0.0",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
