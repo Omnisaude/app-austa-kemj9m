@@ -1,6 +1,5 @@
 import { defineConfig } from 'cypress'; // v13.0.0
 import '@cypress/code-coverage'; // v3.12.0
-import '@cypress/audit'; // v1.0.0
 
 // Import enhanced e2e test configuration with security and compliance functions
 import { setupNodeEvents, securityValidation, complianceChecks } from './cypress/support/e2e';
