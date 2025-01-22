@@ -81,8 +81,8 @@
   "devDependencies": {
     "@axe-core/react": "^4.7.0",
     "@cypress/code-coverage": "^3.10.0",
-    "@jest/globals": "^29.0.0",
-    "@jest/types": "^29.7.0",
+    "@jest/globals": "29.6.3",
+    "@jest/types": "29.6.3",
     "@next/bundle-analyzer": "^13.4.0",
     "@testing-library/cypress": "^10.0.0",
     "@testing-library/react": "14.0.0",
