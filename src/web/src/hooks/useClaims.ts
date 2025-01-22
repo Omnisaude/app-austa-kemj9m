@@ -6,7 +6,6 @@
 
 // React imports - v18.0.0
 import { useState, useCallback, useEffect } from 'react';
-import { useAbortController } from '@react-hooks/abort-controller'; // v1.0.0
 
 // Error handling and audit logging - v1.0.0
 import { ClaimsError } from '@austa/claims-error-handling';
@@ -57,7 +56,7 @@ export const useClaims = (options: ClaimsOptions = {}) => {
   });
 
   // Initialize abort controller for request cancellation
-  const { signal, abort } = useAbortController();
+  const { signal, abort } = {};
 
   // Initialize audit logger
   const auditLogger = new AuditLogger({
