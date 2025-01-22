@@ -1,7 +1,6 @@
 import React from 'react';
 import { render, screen, fireEvent, waitFor, within } from '@testing-library/react';
 import { vi, describe, it, expect, beforeEach } from 'vitest';
-import { mockWebRTC } from '@testing-library/webrtc-mock';
 import { useEncryption } from '@healthcare/encryption';
 
 import VideoConsultation from '../../../src/components/virtual-care/VideoConsultation';
